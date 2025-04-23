@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>The Red Box</title>
+	
+		<style>
+					.box {
+						background-color: red;
+						margin: 40px;
+						height: 400px;
+						width: 400px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						border: 10px solid black;
+						border-radius: 4px;
+						}
+					.box:hover {
+							background-color: rgba(255, 255, 255, 1)
+								}
+					body {
+							margin: 0;
+							height: 100vh; 
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background-color: rgba(255, 255, 255, 0);
+						}
+						
+					body:hover {
+							background-color: red;
+							}
+							
+				    .text-default,
+					.text-hover {
+								position: absolute;
+								transition: opacity 0.3s ease;
+								}
+
+					.text-hover {
+								opacity: 0;
+								color: red;
+								}
+
+					.box:hover .text-default {
+											opacity: 0;
+												}
+
+					.box:hover .text-hover {
+											opacity: 1;
+											}
+					.text-default h3 {
+									  color: white;
+									  }
+		</style>
+	</head>
+	
+	<body>
+		<div class="box">
+		    <div class="text-default"><h3>The Red Box</h3></div>
+			<div class="text-hover"><h3>The White Box</h3></div>
+		</div>
+	</body>
+</html>
